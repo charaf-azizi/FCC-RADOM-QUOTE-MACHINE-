@@ -50,7 +50,7 @@ this.state = {
         <div className="quote-container ">
         
         
-        {this.state.loading? <i>loading quote...</i>:<p className={`text-color-${this.state.new_color}`}><i style={{fontSize:'2.6rem'}} class="fas fa-quote-left"></i> {this.state.quote[0]}</p> }  
+        {this.state.loading? <i>loading quote...</i>:<p id="text" className={`text-color-${this.state.new_color}`}><i style={{fontSize:'2.6rem'}} class="fas fa-quote-left"></i> {this.state.quote[0]}</p> }  
 
          
         </div> 
@@ -61,8 +61,8 @@ this.state = {
         </div>
         <div className="button-container">
           <div className="tweet">
-        <a className={`bg-color-${this.state.new_color}`} href="wwww" id="tweet-quote"><i className="fab fa-twitter"></i></a>
-        <a  className={`bg-color-${this.state.new_color}`} href="www" id="tweet-quote"><i className="fab fa-facebook"></i></a>
+        <a className={`bg-color-${this.state.new_color}`} href="twitter.com/intent/tweet" id="tweet-quote"><i className="fab fa-twitter"></i></a>
+        <a  className={`bg-color-${this.state.new_color}`} href="www" ><i className="fab fa-facebook"></i></a>
         </div>
 <button className={`bg-color-${this.state.new_color}`} onClick={this.handleClick} id="new-quote">new quote</button>
 </div>

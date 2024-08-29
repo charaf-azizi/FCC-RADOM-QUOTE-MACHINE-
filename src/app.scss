@@ -11,7 +11,9 @@
 
 @for $i from 1 through 100 {
     $random-color:rgba(random(255),random(255),random(255));
-    .bg-color-#{$i} { background-color: $random-color; }
+    $random-color2:rgba(random(255),random(255),random(255));
+
+    .bg-color-#{$i} { background-image: linear-gradient(to bottom right, $random-color, $random-color2); }
     .text-color-#{$i} {color: $random-color;}
   }
 
